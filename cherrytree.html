@@ -2,23 +2,21 @@
 
 <head>
     <title>Cherry Trees on Campus</title>
-</head>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-
     puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrD
     h+drA==" crossorigin="" />
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-
        QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw
        5lwrg==" crossorigin=""></script>
-<script src="C:/Users/Eric Leonard/Documents/geog465/leafelts/leaflet_tutorial/data/flowering_cherries_4326.geojson"></script>
-<script src="C:/Users/Eric Leonard/Documents/geog465/leafelts/leaflet_tutorial/data/old_well_4326.geojson"></script>
+    <script src="data.js"></script>
+</head>
 
 
 
 <body>
-    <font size="6">UNC's Cherry Trees</font>
+    <h1>UNC's Cherry Trees</h1>
+    <div id="mapid"></div>
 </body>
-<div id="mapid"></div>
 <style>
     #mapid {
         width: 900px;
@@ -34,7 +32,7 @@
     // L.tileLayer can display a tile layer. You can check out other tile layer
     // https://leaflet-extras.github.io/leaflet-providers/preview/.
     var cherrypic = L.icon({
-        iconUrl: 'cherries.png',
+        iconUrl: 'https://raw.githubusercontent.com/ecl2020/cherrytrees/master/cherries.png',
         iconSize: [40, 40],
         popupAnchor: [0, 0]
     });
